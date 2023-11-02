@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.Nav {
+  background: #40868b;
+  padding: 1% 7%;
+  text-align: center;
+}
+
+.Nav img {
+  margin: -40px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Navbar Design Starts Here */
+
+.Nav::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.meain h1 {
+  color: white;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.footer a {
+  background: #0c6168;
+  border-radius: 10px;
+  margin: 7px;
+  padding: 10px;
+}
+
+.footer a:hover {
+  background: rgb(78, 154, 187);
+}
+
+/* Navbar Design Ends Here */
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+/* Profile Design Starts Here */
+
+.Profile {
+  padding: 130px 10px;
+  position: relative;
+  text-align: center;
+}
+
+.Profile .top-weather-icon {
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  transition: transform 2s;
+}
+
+.Profile .top-weather-icon:hover {
+  transform: rotate(360deg);
+}
+
+.Profile-desc h1 {
+  font-family: "Satisfy", cursive;
+}
+
+.Profile-desc p {
+  margin: 0 auto 20px auto;
+  width: 90%;
+  text-align: center;
+  color: gray;
+}
+
+.Profile .bottom-weather-icon {
+  position: absolute;
+  left: 60px;
+  bottom: 20px;
+  transition: transform 2s;
+}
+
+.Profile .bottom-weather-icon:hover {
+  transform: rotate(360deg);
+}
+
+/* Profile Design Ends Here */
